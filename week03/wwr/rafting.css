@@ -1,9 +1,11 @@
 /* CSS Variables */
 :root {
-    --body-font: Arial, sans-serif;
-    --heading-font: 'Georgia', serif;
-    --primary-color: #005f73;
-    --accent1-color: #0a9396;
+    --primary-color: #055a05; /* forest green */
+    --secondary-color: #f4a261; /* warm sand */
+    --accent1-color: #264653; /* dark slate blue */
+    --accent2-color: #e9c46a; /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 /* Reset box model */
@@ -27,8 +29,8 @@ header, main, footer {
 
 /* Headings */
 h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 /* Basic spacing */
@@ -62,7 +64,7 @@ nav, p, section, article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #fff; /* white text - make sure there is enough contrast with the background-color */ 
 }
 
 /* Hero article */
