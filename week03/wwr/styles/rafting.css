@@ -78,19 +78,30 @@ nav, p, section, article {
 
 .hero article {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--accent2-color);
-  padding: 15px;
+  background-color: rgba(255, 255, 0.85);
+  padding: 1rem;
   gap: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0,0.3);
-  width: 90%;
-  opacity: 0.9;
+  width: 80%;
+  
 }
 
 .hero  {
     position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 1rem;
 }
 
 .hero img {
