@@ -74,6 +74,8 @@ nav, p, section, article {
 
 .socialmedia a {
     text-decoration: none;
+    display: inline-block;
+    margin: 0 8px;
 }
 
 .hero article {
