@@ -20,7 +20,6 @@ body {
 }
 
 header, .grid, footer {
-  width: 840px;
   margin: 0 auto;
   width: 100%;
 }
@@ -157,6 +156,7 @@ main {
 footer p {
   color: black;
   margin-top: 10px;
+  text-align: center;
 }
 
 .socialmedia a {
@@ -180,10 +180,7 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-aside {
-  grid-column: 1 / -1;
-}
-
+aside,
 main {
   grid-column: 1 / -1;
 }
@@ -196,7 +193,7 @@ nav {
   width: 95%;
 }
 
-{
+
   @media (max-width: 480px;) {
   .hero h1 {
     font-size: 1.4rem;
