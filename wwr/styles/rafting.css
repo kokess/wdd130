@@ -1,28 +1,33 @@
-{
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
 :root{
-    --primary-color: #0a4c72:
-    --acent-color: #eef6ff;
+    --primary-color: #0a4c72;
+    --accent-color: #eef6ff;
     --text-light: #ffffff;
-    --overlay-light: rgba(255, 255, 0.7);
+    --text-dark: #000000;
+
+    --overlay-light: rgba(0, 0, 0, 0.55); 
+
     --button-hover: #083954;
     --radius: 8px;
+
+    --background-light: #f2f2f2; 
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-light);
 }
 
 header {
     background: var(--primary-color);
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px,
-    display: flex;
+    padding: 10px 20px;
 }
 
 header img {
@@ -38,23 +43,23 @@ nav a {
 
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    
 }
 
 .hero h1 {
-    position: absolute
+    position: absolute;
     top: 20%;
     left: 5%;
-    color: white;
-    background: var(0, 0, 0, 0.5);
-    padding: 15px
+    color: var(--text-light);
+    background: var(--overlay-light);
+    padding: 15px;
     font-size: 2.2rem;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 .hero article {
@@ -62,17 +67,17 @@ nav a {
     bottom: 10%;
     left: 5%;
     width: 40%;
-    background: var(--over-light);
+    background: var(--overlay-light);
     padding: 15px;
     border-radius: var(--radius);
+    color: var(--text-light);
 }
 
 .hero article img {
     float: right;
-    width:120px;
+    width: 120px;
     margin-left: 10px;
     border-radius: var(--radius);
-
 }
 
 .newsletter {
@@ -80,16 +85,16 @@ nav a {
     padding: 40px 20px;
 }
 
-.newsletter input {
-    padding: 10px;
-    margin: 5px;
-}
-
 .newsletter form {
     display: grid;
     gap: 10px;
     width: 300px;
     margin: auto;
+}
+
+.newsletter input {
+    padding: 10px;
+    border-radius: var(--radius);
 }
 
 .newsletter button {
@@ -101,7 +106,7 @@ nav a {
     border-radius: var(--radius);
 }
 
-button:hover {
+.newsletter button:hover {
     background: var(--button-hover);
 }
 
@@ -112,9 +117,10 @@ button:hover {
 
 .btn {
     padding: 10px 20px;
-    background: #0a4c72;
-    color: white;
+    background: var(--primary-color);
+    color: var(--text-light);
     text-decoration: none;
+    border-radius: var(--radius);
 }
 
 .btn:hover {
@@ -123,14 +129,14 @@ button:hover {
 
 .grid-info {
     display: grid;
-    grid-template-columns: repeat 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 30px;
 }
 
 .grid-info img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 footer {
@@ -140,7 +146,7 @@ footer {
     text-align: center;
 }
 
-.socialmedia{
+.socialmedia {
     width: 30px;
     margin: 0 10px;
 }
