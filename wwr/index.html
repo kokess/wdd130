@@ -4,99 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="White Water Rafting Company Home Page">
-    <meta name="author" content="Austine Essien / WDD130">
+    <meta name="description" content="Exciting Expeditions - Your ultimate white water rafting adventure destination.">
+    <meta name="author" content="Austine Essien">
     <title>About Us and the rafting company name</title>
-    <link rel="stylesheet" href="rafting.css">
+
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
     <header>
-        <img src="images/logo.png" alt="Exciting Expeditions Logo" class="logo">
+        <img src="images/logo.jpg" alt="Exciting Expeditions Logo" class="logo">
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <main>
+</body>
 
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-img">
-            <h1>Exciting Expeditions Rafting Co.</h1>
+<section>
+    <div class="hero">
+        <img src="images/hero-banner.jpg" alt="Rafting Adventure" class="hero-img">
 
-            <article>
-                <img src="images/happy-client.png" alt="Happy Client">
-                <p>Experience thrilling white water rafting adventures that create unforgettable memories!</p>
-            </article>
+        <h1>Experience the Thrill of White Water Rafting</h1>
+
+        <article class="hero-text">
+            <p>
+                Discover unforgettable rafting adventures with breathtaking scenery, expert guides,
+                and heart-pounding excitement!
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h2>Join Our Adventure Newsletter</h2>
+    <p>Stay updated on new trips, discounts, and special events.</p>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</section>
+
+<section class="cta">
+    <h2>Your Next Adventure Awaits</h2>
+    <p>Explore our thrilling rafting trips designed for all experience levels.</p>
+
+    <a href="trips.html" class="btn">View All Trips</a>
+</section>
+
+<section class="grid-info">
+    <h2>Why Choose Exciting Expeditions?</h2>
+
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <img src="images/rafting001.jpg" alt="Guided rafting tours">
+            <h3>Expert Guides</h3>
+            <p>
+                Our professional guides ensure your experience is exciting and safe.
+            </p>
         </div>
 
-        <section>
-            <h2>History</h2>
-            <p>Exciting Expeditions has been providing world-class rafting experiences for adventure seekers for more
-                than two decades. Our expert guides and top-quality equipment ensure unforgettable excitement and safety
-                on every trip.</p>
-        </section>
-
-        <section>
-            <h2>Adventure Awaits You!</h2>
-
-            <figure>
-                <img src="images/rafting1.jpg" alt="Rafting Image 1">
-                <figcaption>Rapid Rush</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting2.jpg" alt="Rafting Image 2">
-                <figcaption>Team Power</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting3.jpg" alt="Rafting Image 3">
-                <figcaption>Wild Waters</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting4.jpg" alt="Rafting Image 4">
-                <figcaption>Exciting Drops</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting5.jpg" alt="Rafting Image 5">
-                <figcaption>Unforgettable Moments</figcaption>
-            </figure>
-        </section>
-
-        <div class="newsletter">
-            <h2>Join Our Newsletter</h2>
-            <p>Subscribe for updates, discounts, and new adventure announcements!</p>
-
-            <form action="#" method="post">
-                <label for="newsletter-name">Name:</label>
-                <input type="text" id="newsletter-name" name="name" required>
-
-                <label for="newsletter-email">Email:</label>
-                <input type="email" id="newsletter-email" name="email" required>
-
-                <button type="submit">Subscribe</button>
-            </form>
+        <div class="grid-item">
+            <img src="images/rafting004.jpg" alt="Rafting adventure group">
+            <h3>Unforgettable Adventures</h3>
+            <p>
+                Whether beginner or pro, our trips offer stunning views and heart-pounding action.
+            </p>
         </div>
 
-    </main>
+        <div class="grid-item">
+            <img src="images/rafting07.jpg" alt="Happy family rafting">
+            <h3>Family Friendly</h3>
+            <p>
+                We offer trips suited for families, groups, and thrill-seekers alike.
+            </p>
+        </div>
 
-    <footer>
-        <p>© 2024 Exciting Expeditions Rafting Co. | Created by Austine Essien</p>
+    </div>
+</section>
 
-        <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </nav>
-    </footer>
+</main>
+
+<footer>
+    <p>&copy; 2025 Exciting Expeditions | Designed by Austine Essien</p>
+
+    <nav class="socialmedia">
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="Instagram icon">
+        </a>
+
+        <a href="https://linkedin.com">
+            <img src="images/linkedin.png" alt="LinkedIn icon">
+        </a>
+    </nav>
+</footer>
 
 </body>
 
