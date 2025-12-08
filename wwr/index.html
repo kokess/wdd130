@@ -1,117 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Exciting Expeditions - Your ultimate white water rafting adventure destination.">
-    <meta name="author" content="Austine Essien">
-    <title>About Us and the rafting company name</title>
-
+    <title>White Water Rafting | Home</title>
+    <meta name="description"
+        content="White Water Rafting Co. delivers thrilling river adventures, promoting safety, teamwork, and a vision to inspire outdoor passion and environmental care.">
+    <meta name="author" content="Mark John">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-
     <header>
-        <img src="images/logo.jpg" alt="Exciting Expeditions Logo" class="logo">
-
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div class="hero">
-                <article class="hero-text">
-                    <img src="images/hero-banner.jpg" alt="Rafting Adventure" class="hero-img">
-
-                    <h1>Experience the Thrill of White Water Rafting</h1>
-                    <p>
-                        Discover unforgettable rafting adventures with breathtaking scenery, expert guides,
-                        and heart-pounding excitement!
-                    </p>
-                </article>
-            </div>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero-2">
+            <img src="images/hero2.jpg" alt="Rafting Hero Image">
+            <h1 class="hero-text">Experience the Thrill of Whitewater Rafting</h1>
         </section>
 
+        <!-- ================= NEWSLETTER SECTION ================= -->
         <section class="newsletter">
             <h2>Join Our Adventure Newsletter</h2>
-            <p>Stay updated on new trips, discounts, and special events.</p>
+            <p>Get trip updates, adventure tips, and exclusive discounts.</p>
 
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit" class="btn">Subscribe</button>
+            <form action="#" method="post" class="newsletter-form">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
             </form>
         </section>
 
+        <!-- ================= CALL TO ACTION ================= -->
         <section class="cta">
-            <h2>Adventure Awaits You</h2>
-            <p>Explore our thrilling rafting trips designed for all experience levels.</p>
-
-            <a href="trips.html" class="btn">View All Trips</a>
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Explore our exciting rafting trips designed for thrill-seekers and nature lovers.</p>
+            <a href="trips.html" class="cta-btn">View Our Trips</a>
         </section>
 
-        <section class="grid-info">
-            <h2>Why Choose Exciting Expeditions?</h2>
+        <!-- ================= CSS GRID CONTENT SECTION ================= -->
+        <section class="grid-section">
 
-            <div class="grid-container">
-
-                <div class="grid-item">
-                    <img src="images/rafting001.jpg" alt="Guided rafting tours">
-                    <h3>Expert Guides</h3>
-                    <p>
-                        Our professional guides ensure your experience is exciting and safe.
-                    </p>
-                </div>
-
-                <div class="grid-item">
-                    <img src="images/rafting004.jpg" alt="Rafting adventure group">
-                    <h3>Unforgettable Adventures</h3>
-                    <p>
-                        Whether beginner or pro, our trips offer stunning views and heart-pounding action.
-                    </p>
-                </div>
-
-                <div class="grid-item">
-                    <img src="images/rafting07.jpg" alt="Happy family rafting">
-                    <h3>Family Friendly</h3>
-                    <p>
-                        We offer trips suited for families, groups, and thrill-seekers alike.
-                    </p>
-                </div>
-
+            <div class="grid-item">
+                <img src="images/adventure02.jpg" alt="Rafting Adventure">
+                <h3>Our Purpose</h3>
+                <p>
+                    We aim to provide unforgettable whitewater rafting experiences for families, beginners,
+                    and expert rafters alike. Safety and fun are at the core of our mission.
+                </p>
             </div>
+
+            <div class="grid-item">
+                <img src="images/team01.jpg" alt="Rafting Team">
+                <h3>What We Offer</h3>
+                <p>
+                    From beginner-friendly float trips to extreme Class IV adventures, our guided tours
+                    guarantee excitement, stunning scenery, and memories that last a lifetime.
+                </p>
+            </div>
+
+            <div class="grid-item text-box">
+                <img src="images/adventure01.jpg" alt="Rafting Team">
+                <h3>Why Choose Us?</h3>
+                <p>
+                    We combine professional guides, top-quality equipment, and a passion for adventure.
+                    Whether you're seeking calm waters or intense rapids, we have a trip for you.
+                </p>
+            </div>
+
         </section>
-
     </main>
-
     <footer>
-        <p>&copy; 2025 Exciting Expeditions | Designed by Austine Essien</p>
-
+        <p>
+            &copy; 2025 White Water Rafting | Mark John </p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook icon">
+                <img src="images/facebook.png" alt="Facebook Icon">
             </a>
-
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram icon">
-            </a>
-
             <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn icon">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon">
             </a>
         </nav>
-    </footer>
 
+    </footer>
 </body>
 
 </html>
